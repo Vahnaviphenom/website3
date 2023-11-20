@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+<style type = "text/css">
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+.logo {
+    height: 60px;
+    width: 60px;
+}
+#banner-section1 {
+    height: 90vh;
+}
+l1 {
+    color: black !important;
+    font-family: "Roboto";
+}
+.card1 {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/foodmunch-banner-bg.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    height: 90vh;
+}
+#navItem1 {
+    color: black;
+    font-family: "Roboto";
+}
+#navItem2 {
+    color: black;
+    font-family: "Roboto";
+}
+#navItem3 {
+    color: black;
+    font-family: "Roboto";
+}
+#navItem4 {
+    color: black;
+    font-family: "Roboto";
+}
+.h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 40px;
+}
+.p1 {
+    color: white;
+    font-size: 22px;
+}
+.card1 {
+    text-align: center;
+    font-size: 30px;
+}
+.button1 {
+    background-color: #FCE40A;
+    height: 35px;
+    width: 120px;
+    border-width: 0;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    margin: 8px;
+}
+.button2 {
+    background-color: transparent;
+    height: 35px;
+    width: 120px;
+    border-radius: 8px;
+    color: #F2E038;
+    font-size: 20px;
+    border-style: solid;
+    border-color: white;
+    margin: 8px;
+}
+.why-choose-us {
+    background-color: #E6E3C8;
+    padding: 20px;
+    padding-bottom: 80px;
+}
+.why-choose-us-heading {
+    color: black;
+    font-weight: bold;
+    font-size: 27px;
+    margin-top: 20px;
+    font-family: "Roboto";
+    margin-left: 8px;
+}
+.why-choose-us-discription {
+    color: black;
+    font-size: 15px;
+    font-family: "Roboto";
+    margin-left: 8px;
+}
+.card2 {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.img2 {
+    height: 100px;
+    width: 100px;
+}
+.card2-heading {
+    font-family: "Roboto";
+    color: black;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.card2-para {
+    font-family: "Roboto";
+    color: black;
+    font-size: 15px;
+    opacity: 0.8;
+}
+.explore-menu {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #DBC3C1;
+}
+.explore-menu-heading {
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: bold;
+    color: #1E212E;
+    margin-bottom: 30px;
+}
+.explore-menu-div {
+    border-radius: 14px;
+    padding: 25px;
+    background-color: white;
+}
+.explore-menu-img {
+    width: 100%;
+    border-radius: 14px;
+}
+.explore-menu-sub-heading {
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #1E212E;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.explore-menu-a {
+    font-family: "Roboto";
+    font-size: 15px;
+    color: #ACE00D;
+}
+.food-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    width: 100vw;
+}
+.food-heading {
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: bold;
+    color: #1E212E;
+    margin-bottom: 30px;
+}
+.food-para {
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #1E212E;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.food-img {
+    width: 100%;
+}
+.food-button {
+    height: 40px;
+    width: 100px;
+    background-color: #A7D12A;
+    color: white;
+    border-radius: 8px;
+    border-width: 0;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+.bg-container11 {
+    width: 100vw;
+}
+.payment-img {
+    height: 40px;
+    width: 50px;
+}
+.thankyou-div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: linear-gradient(to top, #ADD12A, #D7F277);
+}
+.thankyou-heading {
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: bold;
+    color: #1E212E;
+    margin-bottom: 30px;
+}
+.thankyou-para {
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #1E212E;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    opacity: 0.7;
+}
+.thankyou-button {
+    height: 40px;
+    width: 100px;
+    background-color: #868A78;
+    color: white;
+    border-radius: 8px;
+    border-width: 0;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+.thankyou-img {
+    width: 100%;
+}
+.modal-img {
+    width: 100%;
+}
+.follow-div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+}
+.follow-h1 {
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: bold;
+    color: #1E212E;
+    margin-bottom: 30px;
+}
+i {
+    color: #ADD12A;
+    font-size: 30px;
+}
+.follow-div1 {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #E6E3C8;
+    padding: 10px;
+}
+.contact {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #1E212E;
+}
+.contact-para1 {
+    font-family: "Roboto";
+    font-size: 17px;
+    color: #B6BAA8;
+    font-weight: bold;
+}
+.contact-para2 {
+    font-family: "Roboto";
+    font-size: 17px;
+    color: #B6BAA8;
+}
+</style>
+</head>
+<body>
+    <div class="bg-container11">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" class="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" id="navItem1" href="#why-choose-us-section1">Why Choose Us?<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="navItem2" href="#explore-menu-section1">Explore Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="navItem3" href="#payment-section1">Delivary and Payment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="navItem4" href="#follow-section1">Follow Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="banner-section1 container-fluid">
+            <div class="banner-section d-sm-block d-md-none">
+                <div class="card1">
+                    <h1 class="h1">Get Delicious Food Anytime</h1>
+                    <p class="p1">Eat Smart & Healthy</p>
+                    <button class="button1">View Menu</button>
+                    <button class="button2">Order Now</button>
+                </div>
+            </div>
+            <div class="text-center banner-section  d-none d-md-block">
+                <div class="card1 d-flex flex-column justify-content-center">
+                    <div class="div100">
+                        <h1 class="h1">Get Delicious Food Anytime</h1>
+                        <p class="p1">Eat Smart & Healthy</p>
+                        <button class="button1">View Menu</button>
+                        <button class="button2">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="why-choose-us-section1">
+            <div class="why-choose-us">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="why-choose-us-heading">
+                                Why Choose Us?
+                            </h1>
+                            <p class="why-choose-us-discription">
+                                We use both original recipies and classic versions of famous food items
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card2">
+                                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png" class="img2" />
+                                <h1 class="card2-heading">Food Service</h1>
+                                <p class="card2-para">Experience fine dinig at comfort of your home.All our orders are carefully packed and arranged to give you the nothing less than perfect.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card2">
+                                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/fruits-img.png" class="img2" />
+                                <h1 class="card2-heading">Fresh Food</h1>
+                                <p class="card2-para">The Fresh Food group provides fresh-cut fruits and vegetables directly picked from our partnar farms and farm houses so that you alwys get them from tree to plate.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card2">
+                                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/offers-img.png" class="img2" />
+                                <h1 class="card2-heading">Best Offers </h1>
+                                <p class="card2-para">Food Coupons & Offers upto <span class="span1">50% OFF and Exclusive promo codes on All Online Food Orders</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="explore-menu-section1">
+            <div class="explore-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="explore-menu-heading">
+                                Explore Menu
+                            </h1>
+                        </div>
+                        <div class="col-12 mb-4 col-md-6 col-lg-3 shadow">
+                            <div class="explore-menu-div">
+                                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png" class="explore-menu-img" />
+                                <h1 class="explore-menu-sub-heading">
+                                    Non-Veg Starters
+                                </h1>
+                                <a class="explore-menu-a">
+                                    View All <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12  mb-4 col-md-6 col-lg-3 shadow">
+                            <div class="explore-menu-div">
+                                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-veg-starters-img.png" class="explore-menu-img" />
+                                <h1 class="explore-menu-sub-heading">
+                                    Veg Strters
+                                </h1>
+                                <a class="explore-menu-a">
+                                    View All <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12  mb-4 col-md-6 col-lg-3 shadow">
+                            <div class="explore-menu-div">
+                                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-soup-img.png" class="explore-menu-img" />
+                                <h1 class="explore-menu-sub-heading">
+                                    Soups
+                                </h1>
+                                <a class="explore-menu-a ">
+                                    View All <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+3:22
+<div class="col-12  mb-4 col-md-6 col-lg-3 shadow">
+                            <div class="explore-menu-div">
+                                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-grilled-seafood-img.png" class="explore-menu-img" />
+                                <h1 class="explore-menu-sub-heading">
+                                    Fish and sea food
+                                </h1>
+                                <a class="explore-menu-a">
+                                    View All <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4 col-md-6 col-lg-3 shadow">
+                            <div class="explore-menu-div">
+                                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-hyderabadi-biryani-img.png" class="explore-menu-img" />
+                                <h1 class="explore-menu-sub-heading">
+                                    Main Course
+                                </h1>
+                                <a class="explore-menu-a">
+                                    View All <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12  mb-4  col-md-6 col-lg-3 shadow">
+                            <div class="explore-menu-div">
+                                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-mushroom-noodles-img.png" class="explore-menu-img" />
+                                <h1 class="explore-menu-sub-heading">
+                                    Noodles
+                                </h1>
+                                <a class="explore-menu-a">
+                                    View All <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12  mb-4 col-md-6 col-lg-3 shadow">
+                            <div class="explore-menu-div">
+                                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-gluten-img.png" class="explore-menu-img" />
+                                <h1 class="explore-menu-sub-heading">
+                                    Salads
+                                </h1>
+                                <a class="explore-menu-a">
+                                    View All <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12  mb-4 col-md-6 col-lg-3 shadow">
+                            <div class="explore-menu-div">
+                                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-coffee-bourbon-img.png" class="explore-menu-img" />
+                                <h1 class="explore-menu-sub-heading">
+                                    Desserts
+                                </h1>
+                                <a class="explore-menu-a">
+                                    View All <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="food-section1">
+            <div class="food-container w-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                            <div class="food-div">
+                                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/healthy-food-plate-img.png" class="food-img" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <div class="food-div-content">
+                                <h1 class="food-heading">
+                                    Fresh,HealthyOrganic,<br />Delicious Fruits
+                                </h1>
+                                <p class="food-para">
+                                    Say no to harmful chemicals and go fully organic with our range of fredh fruits and veggies.Pamper your body and senses with true and Unadultered gifts from mother nature.With the true and unadultered gifts from mother nature.
+                                </p>
+                                <button class="food-button">Watch Vedio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="payment-section1">
+            <div class="food-container w-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-5 order-md-2">
+                            <div class="food-div">
+                                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/delivery-payment-section-img.png" class="food-img" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7 order-md-1">
+                            <div class="food-div-content">
+                                <h1 class="food-heading">
+                                    Delivary And Payment
+                                </h1>
+                                <p class="food-para">
+                                    For You Get live Tracking and locate tour food on live map.It's quite a sight to seeyour food arrive to your door.Plus,You get a 5 % discount on every order every time you pay online.
+                                </p>
+                                <button class="food-button">Watch Vedio</button>
+                                <div class="payment-1 mt-4">
+                                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png" class="payment-img mr-3" />
+                                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png" class="payment-img mr-3" />
+                                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png" class="payment-img mr-3" />
+                                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/american-express-img.png" class="payment-img mr-3" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thankyou-section1">
+            <div class="thankyou-div">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-8 mt-4">
+                            <h1 class="thankyou-heading">Thank you for being a valuable customer to us.</h1>
+                            <p class="thankyou-para">We have a surprise gift for you</p>
+                            <div class="div1000 d-none d-md-block">
+                                <button type="button" class="thankyou-button" data-toggle="modal" data-target="#exampleModal">
+                                    Reedem Gift
+                                </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title thankyou-heading" id="exampleModalLabel">Gift Voucher</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-1">
+                                                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/gift-voucher-img.png" class="modal-img" />
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                            </div>
+(319 kB)
+https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-grilled-seafood-img.png
+
+(305 kB)
+https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-hyderabadi-biryani-img.png
+
+(260 kB)
+https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-mushroom-noodles-img.png
+
+(280 kB)
+https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-gluten-img.png
+
+3:22
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thankyou-img" />
+                        </div>
+                        <div class="col-12  d-block d-md-none">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="thankyou-button" data-toggle="modal" data-target="#exampleModal">
+                                Reedem Gift
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title thankyou-heading" id="exampleModalLabel">Gift Voucher</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="modal-1">
+                                                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/gift-voucher-img.png" class="modal-img" />
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="follow-section1">
+            <div class="follow-div">
+                <div class="container">
+                    <div class="col-12 text-center">
+                        <h1 class="follow-h1">
+                            Follow Us
+                        </h1>
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="follow-div1">
+                                <i class="fab fa-twitter icon"></i>
+                            </div>
+                            <div class="follow-div1">
+                                <i class="fab fa-instagram icon"></i>
+                            </div>
+                            <div class="follow-div1">
+                                <i class="fab fa-facebook icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact-section1">
+            <div class="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-logo-light.png" class="contact-logo" />
+                            <p class="contact-para1">orderfood@foodmunch.com</p>
+                            <p class="contact-para2">123 Ayur Vigyan Nagar,New Delhi India.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
